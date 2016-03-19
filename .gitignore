@@ -1,0 +1,7 @@
+*.pyc
+scrapy/bandcamp/job-save
+scrapy/bandcamp/settings.py
+scrapy/bandcamp/spiders/big_albums.txt
+flask/config.py
+flask/app/settings.py
+flask/app/static/*
