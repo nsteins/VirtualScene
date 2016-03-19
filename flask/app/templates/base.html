@@ -1,0 +1,17 @@
+<html>
+    <head>
+    {% block head %}
+    {% endblock %}
+
+        <title>Virtual Scene - {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <form action="/search" method="post" name="name">
+        {{ form.hidden_tag() }}
+        <p>Enter album name: {{form.name(size=100)}}<type='submit' value='Search'></p>
+        </form>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
