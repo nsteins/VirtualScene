@@ -27,7 +27,7 @@ def search():
     conn = connectToDB()
     cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
     search_query = """SELECT * FROM albums WHERE (tsv @@ to_tsquery(%s))
-                      ORDER BY ts_rank(tsv,to_tsquery(%s))"""
+                      ORDER BY ts_rank(tsv,to_tsquery(%s)) DESC"""
 
     search_results = {};
     form = SearchForm()

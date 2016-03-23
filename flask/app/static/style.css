@@ -1,0 +1,58 @@
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ccc;
+    background-image: url("/static/img/wood.jpg");
+    text-align: center;
+    font-size: large;
+    }
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:  #ccc;
+    outline: none;
+    }
+a:visited {
+    color:  #ccc;
+    }
+a:active {
+    color:  #ccc;
+    }
+a:hover {
+    color: #ccc;
+    text-decoration: underline;
+    }
+strong, b {
+    font-weight: bold;
+    }
+p {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    }
+
+#search {
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+    padding-bottom: 20px;
+    }
+
+#content {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #111;
+    text-align:left; /* part 2 of 2 centering hack */
+    width: 700px;
+    height: auto;
+    min-height: 636px;
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: 0 0 0 -355px;
+    }

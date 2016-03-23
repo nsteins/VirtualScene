@@ -5,4 +5,4 @@ scrapy/bandcamp/spiders/big_albums.txt
 flask/config.py
 flask/VirtualScene.wsgi
 flask/app/settings.py
-flask/app/static/*
+flask/app/static/BxSlider

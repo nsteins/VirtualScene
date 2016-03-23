@@ -1,17 +1,22 @@
 <html>
     <head>
     {% block head %}
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     {% endblock %}
 
         <title>Virtual Scene - {% block title %}{% endblock %}</title>
     </head>
     <body>
+        <div id='content'>
         <form action="/search" method="post" name="name">
         {{ form.hidden_tag() }}
-        <p>Enter album name: {{form.name(size=100)}}<type='submit' value='Search'></p>
+        <p id="search">
+        Search: {{form.name(size=50)}}<type='submit' value='Search'></p>
         </form>
 
         {% block content %}
         {% endblock %}
+        </div>
     </body>
 </html>
